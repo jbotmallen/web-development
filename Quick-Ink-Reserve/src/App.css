@@ -1,0 +1,76 @@
+#root {
+  min-width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  font-family: 'Inder';
+}
+
+.dynamic-width {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 50%;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* For larger screens (e.g., desktop) */
+.hide-on-mobile {
+  display: block; /* Display the element by default */
+}
+
+/* For smaller screens (e.g., mobile) */
+@media (max-width: 767px) {
+  .hide-on-mobile {
+    display: none; /* Hide the element on smaller screens */
+  }
+}
+
+/* For smaller screens (e.g., mobile) */
+.show-on-mobile {
+  display: none; /* Hide the element by default */
+}
+
+/* For smaller screens (e.g., mobile) */
+@media (max-width: 767px) {
+  .show-on-mobile {
+    display: block; /* Display the element on smaller screens */
+  }
+}
+
